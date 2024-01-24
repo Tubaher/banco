@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./enterprise_data.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-flex">
+      <form>
+        <header>
+          <img src="DaTribuNoBg.svg" alt="logo" />
+          <h1>Datos de la empresa</h1>
+        </header>
+        <div class="datos">
+          <p>Ingresa los siguientes datos:</p>
+          <div class="input-data">
+            <p>Razón Social</p>
+            <input
+              type="text"
+              name="razonsocial"
+              id="razonsocial"
+              placeholder="International S.A."
+            />
+          </div>
+          <div class="input-data">
+            <p>Nombre comercial</p>
+            <input
+              type="text"
+              name="nombrecomercial"
+              id="nombrecomercial"
+              placeholder="Mega Internacional"
+            />
+          </div>
+          <div class="input-data">
+            <p>¿La empresa declara impuestos en el exterior?</p>
+            <div class="selection-radio">
+              <label>
+                <input type="radio" name="option" value="si" />
+                Si
+              </label>
+              <label>
+                <input type="radio" name="option" value="no" />
+                No
+              </label>
+            </div>
+          </div>
+          <div class="input-data">
+            <p>
+              ¿La empresa tiene alguna representación en los Estados Unidos?
+            </p>
+            <div class="selection-radio">
+              <label>
+                <input type="radio" name="option" value="si" />
+                Si
+              </label>
+              <label>
+                <input type="radio" name="option" value="no" />
+                No
+              </label>
+            </div>
+            <div class="btn">
+                <img src="left-arrow.svg" alt="arrow" />
+                <button type="submit">
+                  Siguiente <img src="IconRight.svg" alt="arrow" />
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

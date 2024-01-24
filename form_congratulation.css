@@ -1,0 +1,115 @@
+html {
+  margin: 0;
+}
+
+.container-flex {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.container-flex .icon {
+  position: absolute;
+  right: 29px;
+  top: 16px;
+}
+.container-flex form h1 {
+  color: var(--Gray-1, #333);
+  font-family: Raleway;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px; /* 125.714% */
+}
+
+.container-flex form p {
+  color: var(--Gray-1, #333);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px; /* 161.111% */
+  text-align: center;
+}
+
+.selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 30px;
+  gap: 16px;
+}
+
+.selection span {
+  color: #666;
+
+  /* Common/Body2/Medium */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.selection label {
+  border-radius: 8px;
+  border: 1px solid var(--Neutrals-20, #ccc);
+  background: var(--Neutrals-White, #fff);
+  align-self: stretch;
+  padding: 12px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn button {
+  border-radius: 100px;
+  border: none;
+  opacity: 0.3;
+  background: var(--primary-50-main, #f28b00);
+  padding: 8px 24px;
+
+  /* Common/Button/Small */
+  color: var(--Neutrals-White, #fff);
+  font-variant-numeric: lining-nums proportional-nums;
+  /* Common/Body1/Medium */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn button img {
+  width: auto;
+  height: 18px;
+}
+
+@media (width > 400px) {
+  .container-flex {
+    width: 400px;
+  }
+
+  .container-flex form p {
+    text-align: start;
+  }
+
+  .btn {
+    justify-content: end;
+  }
+}
