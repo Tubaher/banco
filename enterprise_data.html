@@ -15,33 +15,36 @@
         </header>
         <div class="datos">
           <p>Ingresa los siguientes datos:</p>
-          <div class="input-data">
-            <p>Razón Social</p>
-            <input
-              type="text"
-              name="razonsocial"
-              id="razonsocial"
-              placeholder="International S.A."
-            />
+          <div class="text-data">
+            <div class="input-data">
+              <p>Razón Social</p>
+              <input
+                type="text"
+                name="razonsocial"
+                id="razonsocial"
+                placeholder="International S.A."
+              />
+            </div>
+            <div class="input-data">
+              <p>Nombre comercial</p>
+              <input
+                type="text"
+                name="nombrecomercial"
+                id="nombrecomercial"
+                placeholder="Mega Internacional"
+              />
+            </div>
           </div>
-          <div class="input-data">
-            <p>Nombre comercial</p>
-            <input
-              type="text"
-              name="nombrecomercial"
-              id="nombrecomercial"
-              placeholder="Mega Internacional"
-            />
-          </div>
+
           <div class="input-data">
             <p>¿La empresa declara impuestos en el exterior?</p>
             <div class="selection-radio">
               <label>
-                <input type="radio" name="option" value="si" />
+                <input type="radio" name="option1" value="si" />
                 Si
               </label>
               <label>
-                <input type="radio" name="option" value="no" />
+                <input type="radio" name="option1" value="no" />
                 No
               </label>
             </div>
@@ -52,24 +55,80 @@
             </p>
             <div class="selection-radio">
               <label>
-                <input type="radio" name="option" value="si" />
+                <input type="radio" name="option2" value="si" />
                 Si
               </label>
               <label>
-                <input type="radio" name="option" value="no" />
+                <input type="radio" name="option2" value="no" />
                 No
               </label>
             </div>
-            <div class="btn">
-                <img src="left-arrow.svg" alt="arrow" />
-                <button type="submit">
-                  Siguiente <img src="IconRight.svg" alt="arrow" />
-                </button>
-              </div>
-            </form>
           </div>
+        </div>
+
+        <div class="datos hidden">
+          <p>Información financiera</p>
+          <div class="input-data">
+            <p>Ventas o ingresos anuales</p>
+            <input
+              type="number"
+              min="0.01"
+              step="0.01"
+              max="99999999"
+              placeholder="9000.00"
+              name="ventas"
+            />
+          </div>
+          <div class="input-data">
+            <p>Total activos (USD)</p>
+            <input
+              type="number"
+              min="0.01"
+              step="0.01"
+              max="99999999"
+              placeholder="9000.00"
+              name="activos"
+            />
+          </div>
+          <div class="input-data">
+            <p>Total pasivos (USD)</p>
+            <input
+              type="number"
+              min="0.01"
+              step="0.01"
+              max="99999999"
+              placeholder="9000.00"
+              name="pasivos"
+            />
+          </div>
+          <div class="input-data">
+            <p>Total patrimonio (USD)</p>
+            <input
+              type="number"
+              min="0.01"
+              step="0.01"
+              max="99999999"
+              placeholder="9000.00"
+              name="patrimonio"
+            />
+          </div>
+        </div>
+        <div class="btn after">
+          <img src="left-arrow.svg" alt="arrow" id="left-svg-arrow" />
+          <button type="submit" id="arrow-left">
+            <img src="IconLeft.svg" alt="arrow-left" /> Anterior
+          </button>
+          <button type="submit" id="arrow-right" disabled>
+            Siguiente <img src="IconRight.svg" alt="arrow-right" />
+          </button>
         </div>
       </form>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./enterprise_data.js"></script>
   </body>
 </html>

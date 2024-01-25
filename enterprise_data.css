@@ -9,6 +9,7 @@ html {
   justify-content: center;
   align-items: center;
   min-width: 200px;
+  max-width: 400px;
   padding: 30px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -39,6 +40,11 @@ html {
 }
 
 .datos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.text-data {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -113,13 +119,12 @@ html {
   justify-content: end;
   align-items: center;
   gap: 140px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .btn button {
   border-radius: 100px;
   border: none;
-  opacity: 0.3;
   background: var(--primary-50-main, #f28b00);
   padding: 8px 24px;
 
@@ -140,4 +145,69 @@ html {
 .btn button img {
   width: auto;
   height: 18px;
+}
+
+.selection-radio input[type="radio"] {
+  accent-color: #f28b00;
+}
+
+.datos.hidden {
+  display: none;
+  margin-top: 50px;
+}
+
+#arrow-left {
+  display: none;
+  border-radius: 100px;
+  border: 2px solid var(--primary-50-main, #f28b00);
+  background: rgba(0, 0, 0, 0);
+  color: #f28b00;
+}
+
+#arrow-right {
+  opacity: 0.3;
+}
+
+@media (width > 400px) {
+  .container-flex {
+    min-width: 400px;
+    max-width: 600px;
+    padding: 30px 60px;
+    background: var(--Backgorund, #f9f6f2);
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-data {
+    flex-direction: row;
+  }
+
+  .datos {
+    background: var(--Neutrals-White, #fff);
+    padding: 32px;
+  }
+
+  .container-flex form header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    align-items: center;
+  }
+  .container-flex form header img {
+    min-width: 150px;
+  }
+
+  #left-svg-arrow {
+    display: none;
+  }
+
+  #arrow-left {
+    display: flex;
+  }
+
+  .btn {
+    gap: 265px;
+  }
 }
