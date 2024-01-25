@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./styles/info_representante.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-flex">
+      <form>
+        <header>
+          <img src="./images/representante_legal.svg" alt="logo" />
+          <h1>Información de accionistas</h1>
+        </header>
+        <div class="datos">
+          <div class="text-data">
+            <div class="input-data">
+              <p>Cargo</p>
+              <select name="cargos" id="cargos">
+                <option value="" disabled selected>Selecciona</option>
+                <option value="abogado">Abogado</option>
+                <option value="arquitecto">Arquitecto</option>
+                <option value="auditor">Auditor</option>
+                <option value="auxiliar">Auxiliar</option>
+              </select>
+            </div>
+            <div class="input-data">
+              <p>Fecha de vencimiento de nombramiento</p>
+              <input
+                type="date"
+                id="vencimiento_nombramiento"
+                name="vencimiento_nombramiento"
+              />
+            </div>
+            <div class="input-data">
+              <p>País de nacimiento</p>
+              <input
+                type="text"
+                name="pais"
+                id="pais"
+                placeholder="Ej: Ecuador"
+              />
+            </div>
+            <div class="input-data">
+              <p>Número celular</p>
+              <div class="phone-section">
+                <label id="ec-phone">
+                  <img src="./images/Ecuador.svg" alt="Ecuador" />
+                  +593
+                </label>
+                <input
+                  type="number"
+                  name="phone"
+                  id="phone"
+                  max="99999999"
+                  placeholder="Ej: 0978655462"
+                />
+              </div>
+            </div>
+            <div class="input-data">
+              <p>Correo electrónico (Representante legal)</p>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Ej: josepepe@gmail.com"
+              />
+            </div>
+          </div>
+
+          <div class="input-data">
+            <p>¿Eres una Persona Expuesta Políticamente?</p>
+            <div class="selection-radio">
+              <label>
+                <input type="radio" name="expuesta" value="si" />
+                Si
+              </label>
+              <label>
+                <input type="radio" name="expuesta" value="no" />
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="datos hidden">
+          <p>Información financiera</p>
+          <div class="input-data">
+            <p>Ventas o ingresos anuales</p>
+            <input
+              type="number"
+              min="0.01"
+              step="0.01"
+              max="99999999"
+              placeholder="9000.00"
+              name="ventas"
+            />
+          </div>
+          <div class="input-data">
+            <p>Total activos (USD)</p>
+            <input
+              type="number"
+              min="0.01"
+              step="0.01"
+              max="99999999"
+              placeholder="9000.00"
+              name="activos"
+            />
+          </div>
+          <div class="input-data">
+            <p>Total pasivos (USD)</p>
+            <input
+              type="number"
+              min="0.01"
+              step="0.01"
+              max="99999999"
+              placeholder="9000.00"
+              name="pasivos"
+            />
+          </div>
+          <div class="input-data">
+            <p>Total patrimonio (USD)</p>
+            <input
+              type="number"
+              min="0.01"
+              step="0.01"
+              max="99999999"
+              placeholder="9000.00"
+              name="patrimonio"
+            />
+          </div>
+        </div>
+        <div class="btn after">
+          <img src="./images/left-arrow.svg" alt="arrow" id="left-svg-arrow" />
+          <button type="submit" id="arrow-left">
+            <img src="./images/IconLeft.svg" alt="arrow-left" /> Anterior
+          </button>
+          <button type="submit" id="arrow-right" disabled>
+            Siguiente <img src="./images/IconRight.svg" alt="arrow-right" />
+          </button>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/enterprise_data.js"></script>
+  </body>
+</html>
