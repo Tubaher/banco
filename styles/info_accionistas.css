@@ -180,10 +180,6 @@ html {
   color: #f28b00;
 }
 
-#arrow-right {
-  opacity: 0.3;
-}
-
 .phone-section {
   display: flex;
   flex-direction: row;
