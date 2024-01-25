@@ -223,7 +223,7 @@ html {
   color: #f28b00;
 }
 
-@media (width > 450px) {
+@media (width > 600px) {
   .container-flex {
     min-width: 400px;
     max-width: 600px;

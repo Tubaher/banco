@@ -100,7 +100,7 @@ html {
   height: 18px;
 }
 
-@media (width > 450px) {
+@media (width > 600px) {
   .container-flex {
     width: 400px;
   }
