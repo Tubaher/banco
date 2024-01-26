@@ -4,84 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./styles/info_representante.css" rel="stylesheet" />
+    <link href="./styles/info_accionistas.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container-flex">
       <form>
         <header>
-          <img src="./images/representante_legal.svg" alt="logo" />
-          <h1>Información del representante legal</h1>
+          <img src="./images/accionista.svg" alt="logo" />
+          <h1>Información de accionistas</h1>
         </header>
         <div class="datos">
+          <p id="accionistaName">Accionista Principal</p>
           <div class="text-data">
             <div class="input-data">
-              <p>Cargo</p>
-              <select name="cargos" id="cargos">
+              <p>Tipo de personas</p>
+              <select name="personas" id="personas">
                 <option value="" disabled selected>Selecciona</option>
-                <option value="abogado">Abogado</option>
-                <option value="arquitecto">Arquitecto</option>
-                <option value="auditor">Auditor</option>
-                <option value="auxiliar">Auxiliar</option>
+                <option value="juridica">Jurídica</option>
+                <option value="natural">Natural</option>
               </select>
             </div>
             <div class="input-data">
-              <p>Fecha de vencimiento de nombramiento</p>
+              <p>Razón social</p>
               <input
-                type="date"
-                id="vencimiento_nombramiento"
-                name="vencimiento_nombramiento"
+                type="text"
+                name="razonsocial"
+                id="razonsocial"
+                placeholder="Ej: Internacional S.A"
+              />
+            </div>
+            <div class="input-data">
+              <p>Tipo de identificación</p>
+              <select name="document" id="document">
+                <option value="" disabled selected>Selecciona</option>
+                <option value="dni">Cedula de identidad</option>
+                <option value="ruc">RUC</option>
+              </select>
+            </div>
+            <div class="input-data">
+              <p>Identificación</p>
+              <input
+                type="number"
+                name="numberDni"
+                id="numberDni"
+                placeholder="1717314789"
               />
             </div>
             <div class="input-data">
               <p>País de nacimiento</p>
               <input
                 type="text"
-                name="pais"
-                id="pais"
-                placeholder="Ej: Ecuador"
+                name="country"
+                id="country"
+                placeholder="Ecuador"
               />
             </div>
             <div class="input-data">
-              <p>Número celular</p>
-              <div class="phone-section">
-                <label id="ec-phone">
-                  <img src="./images/Ecuador.svg" alt="Ecuador" />
-                  +593
-                </label>
-                <input
-                  type="number"
-                  name="phone"
-                  id="phone"
-                  max="99999999"
-                  placeholder="Ej: 0978655462"
-                />
-              </div>
-            </div>
-            <div class="input-data">
-              <p>Correo electrónico (Representante legal)</p>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Ej: josepepe@gmail.com"
-              />
+              <p>Porcentaje de participación</p>
+              <input type="number" min="1" max="100" id="percentage" />
             </div>
           </div>
+        </div>
 
-          <div class="input-data">
-            <p>¿Eres una Persona Expuesta Políticamente?</p>
-            <div class="selection-radio">
-              <label>
-                <input type="radio" name="expuesta" value="si" />
-                Si
-              </label>
-              <label>
-                <input type="radio" name="expuesta" value="no" />
-                No
-              </label>
-            </div>
-          </div>
+        <div class="btn-add">
+          <button type="submit" id="add">
+            Agregar accionista
+            <img src="./images/add.svg" alt="arrow-right" />
+          </button>
         </div>
 
         <div class="btn after">
@@ -89,7 +78,7 @@
           <button type="submit" id="arrow-left">
             <img src="./images/IconLeft.svg" alt="arrow-left" /> Anterior
           </button>
-          <button type="submit" id="arrow-right" disabled>
+          <button type="submit" id="arrow-right">
             Siguiente <img src="./images/IconRight.svg" alt="arrow-right" />
           </button>
         </div>
@@ -100,6 +89,6 @@
       integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
       crossorigin="anonymous"
     ></script>
-    <script src="./js/enterprise_data.js"></script>
+    <script src="./js/info_accionistas.js"></script>
   </body>
 </html>

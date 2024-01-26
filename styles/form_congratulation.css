@@ -64,6 +64,10 @@ html {
   background: var(--Neutrals-White, #fff);
   align-self: stretch;
   padding: 12px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  accent-color: #f28b00;
 }
 
 .btn {
@@ -100,7 +104,7 @@ html {
   height: 18px;
 }
 
-@media (width > 400px) {
+@media (width > 600px) {
   .container-flex {
     width: 400px;
   }

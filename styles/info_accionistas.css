@@ -180,10 +180,6 @@ html {
   color: #f28b00;
 }
 
-#arrow-right {
-  opacity: 0.3;
-}
-
 .phone-section {
   display: flex;
   flex-direction: row;
@@ -196,7 +192,38 @@ html {
   flex-grow: 1;
 }
 
-@media (width > 400px) {
+.btn-add {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 27.5px;
+}
+
+.btn-add button {
+  border-radius: 100px;
+  border: none;
+  background: var(--primary-50-main, #fff);
+  padding: 8px 24px;
+
+  /* Common/Button/Small */
+  color: var(--Neutrals-White, #f28b00ff);
+  font-variant-numeric: lining-nums proportional-nums;
+  /* Common/Body1/Medium */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: 2px solid var(--primary-50-main, #f28b00);
+  background: rgba(0, 0, 0, 0);
+  color: #f28b00;
+}
+
+@media (width > 600px) {
   .container-flex {
     min-width: 400px;
     max-width: 600px;
