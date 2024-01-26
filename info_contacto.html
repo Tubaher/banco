@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./styles/info_contacto.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-flex">
+      <form>
+        <header>
+          <div class="logo-container">
+            <img src="./images/Group 23.svg" alt="logo" />
+          </div>
+          <div class="text-container">
+            <h2>Información</h2>
+            <h3>de Contacto</h3>
+          </div>
+        </header>
+      
+
+        <div class="datos">
+          <div class="input-data">
+            <p>Pichincha</p>
+            <select name="Pichincha" id="Pichincha">
+              <option value="" disabled selected>Selecciona</option>
+              <option value="Pichincha">Pichincha</option>
+              <option value="Guayas">Guayas</option>
+              <option value="Azuay">Azuay</option>
+              <option value="Imbabura">Imbabura</option>
+              <option value="Cotopaxi">Cotopaxi</option>
+              <option value="Los Rios">Los Rios</option>
+            </select>
+          </div>
+          <div class="text-data">
+          <div class="input-data">
+            <p>Canton</p>
+            <select name="Canton" id="Canton">
+              <option value="" disabled selected>Selecciona</option>
+              <option value="Pichincha">Pichincha</option>
+              <option value="Guayas">Guayas</option>
+              <option value="Azuay">Azuay</option>
+              <option value="Imbabura">Imbabura</option>
+              <option value="Cotopaxi">Cotopaxi</option>
+              <option value="Los Rios">Los Rios</option>
+            </select>
+          </div>
+            <div class="input-data">
+              <p>Parroquia</p>
+              <select name="Parroquia" id="Parroquia">
+                <option value="" disabled selected>Selecciona</option>
+                <option value="Parroquia de San Francisco de Quito">San Francisco</option>
+                <option value="Parroquia de Tarqui">Tarqui</option>
+                <option value="Parroquia de Baños"> Baños</option>
+                <option value="Parroquia de San Antonio">San Antonio</option>
+                <option value="Parroquia de Eloy Alfaro">Eloy Alfaro</option>
+                <option value="Parroquia de Clemente Baquerizo">Clemente Baquerizo</option>
+              </select>
+              
+            </div>
+         
+
+          <div class="input-data">
+            <p>Calle principal</p>
+            <input
+              type="text"
+              name="calleprincipal"
+              id="calleprincipal"
+              placeholder="Ej:Av. Rio Amaxona"
+            />
+          </div>
+          <div class="input-data">
+            <p>Numeración</p>
+            <input
+              type="text"
+              name="Numeracion"
+              id="Numeracion"
+              placeholder="Ej:N3 701"
+            />
+          </div>
+
+          <div class="input-data">
+            <p>Calle secundaria</p>
+            <input
+              type="text"
+              name="callesecundaria"
+              id="callesecundaria"
+              placeholder="Ej:Azuay"
+            />
+          </div>
+
+          <div class="input-data">
+            <p>Barrio</p>
+            <input
+              type="text"
+              name="Barrio"
+              id="Barrio"
+              placeholder="Ej:Bellabista"
+            />
+          </div>
+          <div class="input-data">
+            <p>Número celular</p>
+            <div class="phone-section">
+              <label id="ec-phone">
+                <img src="./images/Ecuador.svg" alt="Ecuador" />
+                +593
+              </label>
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                max="99999999"
+                placeholder="Ej: 0978655462"
+              />
+            </div>
+          </div>
+          <div class="input-data">
+            <p>Correo para recibir notificaciones</p>
+            <input
+              type="email"
+              name="emailnotificaciones"
+              id="emailnotificaciones"
+              placeholder="Ej:josepepe@gmail.com"
+            />
+          </div>
+        </div>
+
+      </div>
+        <div class="btn after">
+          <img src="./images/left-arrow.svg" alt="arrow" id="left-svg-arrow" />
+          <button type="submit" id="arrow-left">
+            <img src="./images/IconLeft.svg" alt="arrow-left" /> Anterior
+          </button>
+          <button type="submit" id="arrow-right" disabled>
+            Siguiente <img src="./images/IconRight.svg" alt="arrow-right" />
+          </button>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/enterprise_data.js"></script>
+  </body>
+</html>
